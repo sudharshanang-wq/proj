@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First GitHub Pages Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 25px;
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #24292e;
+        }
+
+        button {
+            background-color: #2ea44f;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #22863a;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 15px;
+            background-color: #24292e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website!</h1>
+        <p>My First Website Hosted Using GitHub Pages</p>
+    </header>
+
+    <div class="container">
+        <h2>Hello, World!</h2>
+
+        <p>
+            This is my first website hosted using GitHub Pages.
+            GitHub Pages allows us to host static websites for free.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <footer>
+        <p>Created by Me | Hosted on GitHub Pages</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Congratulations! Your website is working!";
+        }
+    </script>
+
+</body>
+</html>
